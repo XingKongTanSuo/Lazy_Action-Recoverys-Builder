@@ -10,7 +10,7 @@ on:
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
-        default: 'main'
+        default: '10.0'
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
@@ -18,7 +18,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'twrp-9'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
@@ -106,7 +106,7 @@ jobs:
         swap-size-gb: 12
         
     - name: install py-is-py2
-      run: sudo apt-get install python-is-python2
+      run: sudo apt-get install python-is-python3
 
     - name: Building recovery
       run: |
